@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-06",
+  "venue": "polymarket",
+  "note": "PREVIEW sample: one real UTC day (2026-10-06) of trades by traders ranked 901-1000, built before daily lists were frozen — its list already includes the day itself, which the product never does. Traders who ranked 1-900 in any of the three recent 30-day rankings are left out and not replaced. Replaced by the fixed three-day sample at launch.",
+  "bundle": {
+    "name": "polymarket-smart-money-data-samples.tar.gz",
+    "topLevelDir": "polymarket-smart-money-data-samples",
+    "bytes": 2261942,
+    "sha256": "d743c0a048fc8d675c59e8a7aaa1356f9d0281394f25cbb08977742f7736f7b7",
+    "url": "https://github.com/outcometick/polymarket-smart-money-data-samples/releases/latest/download/polymarket-smart-money-data-samples.tar.gz"
+  },
+  "files": [
+    {
+      "path": "2026-10-06/sample-2026-10-06.csv.zst",
+      "name": "sample-2026-10-06.csv.zst",
+      "rows": 30861,
+      "traders": 65,
+      "wallets": 107,
+      "ranks": {
+        "from": 901,
+        "to": 1000
+      },
+      "bytes": 2255643,
+      "sha256": "63fac3d25db1d405731eb2514f48f4516be50c8d6b8a8f1b84c3f5c07d7ec0f9"
+    },
+    {
+      "path": "2026-10-06/sample-2026-10-06.json",
+      "name": "sample-2026-10-06.json",
+      "note": "the sample's own manifest: the list it was built from, its traders and their wallets",
+      "bytes": 15168,
+      "sha256": "03e6abe15f9e34e2c82e48eb0521f328a834a154fc2d60c2dfa0a907ffa61619"
+    }
+  ]
+}
