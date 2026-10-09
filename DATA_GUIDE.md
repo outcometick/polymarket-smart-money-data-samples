@@ -14,7 +14,7 @@ Read it with `zstd -d` (or `zstdcat`), or in Python:
 
 ```python
 import pandas as pd   # needs the zstandard package: pip install zstandard
-df = pd.read_csv("sample-2026-10-06.csv.zst", compression="zstd", dtype=str)
+df = pd.read_csv("sample-2026-10-08.csv.zst", compression="zstd", dtype=str)
 ```
 
 Read every column as text: `tokenId` is a 77-digit integer and loses precision as a number.
@@ -73,7 +73,7 @@ Only these three values occur today. Older exchange contracts are recognised but
 | ranks | the rank range the sample was drawn from |
 | forbiddenTop · forbiddenFrom · forbiddenTo | traders in the top `forbiddenTop` of the rankings in that period are left out |
 | dropped | how many traders in `ranks` were left out (not replaced) |
-| source | the ranking the list came from: `runId`, the block window `b0`–`b1`, the source daily build |
+| source | the ranking the list came from: `runId`, the block window `b0`–`b1`, whether it was a `fallback` list, the source daily build |
 | trades | the fills: start of the day (`from`), `columns`, and `file` with `name`, `rows`, `bytes`, `sha256` |
 | entities | `[{rank, entityId, wallets}]`, including traders with no fills that day |
 | note | how this sample differs from the product |

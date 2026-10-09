@@ -1,22 +1,25 @@
-# Polymarket Smart-Money Trade History · Free Sample (Preview)
+# Polymarket Smart-Money Trade History · Free Sample
 
 [Polymarket smart-money trade history](https://outcometick.com/polymarket-smart-money-data) from [OutcomeTick](https://outcometick.com),
 built by our partner [PMWallets](https://pmwallets.com): every day, Polymarket traders are ranked on the previous
 30 days of settled markets, and the day's on-chain fills of the ones on the list go into one file. This repository
-hosts a **free preview sample**: one real UTC day (2026-10-06) of the traders ranked 901 to 1000, in the same file
-format as the paid files.
+hosts a **free sample**: one real UTC day (2026-10-08) of the traders ranked 901 to 1000 on that day's frozen list,
+in the same file format as the paid files.
 
 > **中文：** 本仓库是 [OutcomeTick](https://outcometick.com/zh) 的 [Polymarket 聪明钱成交历史](https://outcometick.com/zh/polymarket-smart-money-data)
-> 的**免费预览样本**，数据由合作伙伴 [PMWallets](https://pmwallets.com/zh) 生成：每天依据此前 30 天已结算的市场给交易者排名，
-> 把上榜者当天的链上成交写进一个文件。样本是一个真实 UTC 日（2026-10-06）里排名第 901 到 1000 名的交易者的成交，文件格式与付费文件一致。
+> 的**免费样本**，数据由合作伙伴 [PMWallets](https://pmwallets.com/zh) 生成：每天依据此前 30 天已结算的市场给交易者排名，
+> 把上榜者当天的链上成交写进一个文件。样本是一个真实 UTC 日（2026-10-08）当天正式冻结名单里排名第 901 到 1000 名的交易者的成交，
+> 文件格式与付费文件一致。
 
-> **Preview, not the final sample.** This file was built before daily lists were frozen, so the list it uses
-> already includes the day itself, which the product never does (a day's file always uses the list as of the end of
-> the previous UTC day). Traders who ranked 1–900 in any of the three most recent 30-day rankings are left out and
-> not replaced, so the file holds 65 traders, not 100. It will be replaced by a fixed three-day sample at launch.
+> The list is the frozen list of 2026-10-08, built from data through 2026-10-07 23:59:59 UTC — the same list the
+> paid file for that day uses. Traders who ranked 1–900 on any frozen list from 2026-10-08 to 2026-10-09 are left out
+> and not replaced (24 of them), so the file holds 76 traders. A fixed three-day sample will replace this one.
 >
-> **这是预览，不是正式样本。** 它生成于每日名单冻结之前，所用名单已包含当天本身，正式产品不会这样（某天的文件总是用前一个 UTC 日结束时的名单）。
-> 最近三轮 30 天排名中进过前 900 名的交易者已剔除且不补，所以文件里是 65 个交易者而不是 100 个。开售时将由固定的三天样本取代。
+> 所用名单就是 2026-10-08 的正式冻结名单（数据截至 2026-10-07 23:59:59 UTC），与当天付费文件用的是同一份。2026-10-08 到 10-09
+> 任一份冻结名单中进过前 900 名的交易者已剔除且不补（24 个），所以文件里是 76 个交易者。之后会换成固定的三天样本。
+
+Also on [Kaggle](https://www.kaggle.com/datasets/ligengxin96/polymarket-smart-money-trades-sample) (decompressed CSV) and
+[Hugging Face](https://huggingface.co/datasets/Ligengxin96/polymarket-smart-money-trades-sample).
 
 ## Download / 下载
 
@@ -33,8 +36,8 @@ Field reference: [DATA_GUIDE.md](DATA_GUIDE.md) · 中文字段说明：[数据�
 
 | path | contents |
 |---|---|
-| `2026-10-06/sample-2026-10-06.csv.zst` | 30,861 fills by 65 traders (107 wallets), zstd-compressed CSV with a header row |
-| `2026-10-06/sample-2026-10-06.json` | the sample's manifest: the ranking it was built from, its traders and their wallets |
+| `2026-10-08/sample-2026-10-08.csv.zst` | 32,444 fills by 76 traders (134 wallets), zstd-compressed CSV with a header row |
+| `2026-10-08/sample-2026-10-08.json` | the sample's manifest: the ranking it was built from, its traders and their wallets |
 
 ## How the list is chosen / 名单怎么选
 
