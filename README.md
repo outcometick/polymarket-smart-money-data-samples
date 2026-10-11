@@ -62,5 +62,6 @@ Field reference: [DATA_GUIDE.md](DATA_GUIDE.md) · 中文字段说明：[数据�
 - [Polymarket smart-money trade history](https://outcometick.com/polymarket-smart-money-data) — the product page · [中文](https://outcometick.com/zh/polymarket-smart-money-data)
 - [OutcomeTick](https://outcometick.com) — prediction-market data for Polymarket and Predict.fun · [中文站](https://outcometick.com/zh)
 - [PMWallets](https://pmwallets.com) — our partner's smart-money leaderboard, where you can pick individual wallets and date ranges
+- Community / 社区: [Discord](https://discord.gg/ZDMqkptwm5) (English and 中文) · [Telegram](https://t.me/+TcK_hJOzOz5mZTk1)
 
 For research only; not investment advice. / 仅供研究，不构成投资建议。
