@@ -1,34 +1,81 @@
 {
-  "date": "2026-10-08",
+  "days": [
+    "2026-10-08",
+    "2026-10-09",
+    "2026-10-10"
+  ],
   "venue": "polymarket",
-  "note": "Free sample: one real UTC day (2026-10-08) of trades by the traders ranked 901-1000 on that day's frozen list (built from data through 2026-10-07 23:59:59 UTC, the list the paid file uses). Traders who ranked 1-900 on any frozen list from 2026-10-08 to 2026-10-09 are left out and not replaced (24). A fixed three-day sample will replace it.",
+  "note": "Fixed free sample: three real UTC days (2026-10-08 to 2026-10-10). Each day holds that day's trades by the traders ranked 901-1000 on that day's frozen list (built from data through 23:59:59 UTC of the previous day, the list the paid file uses). Traders who ranked 1-900 on any frozen list from 2026-10-08 to 2026-10-11 are left out and not replaced (58, 65 and 73 on the three days).",
   "bundle": {
     "name": "polymarket-smart-money-data-samples.tar.gz",
     "topLevelDir": "polymarket-smart-money-data-samples",
-    "bytes": 2293773,
-    "sha256": "4e5e0065724f150fc366a86b90c6a1755952d15eba345e95251690fdb32e2176",
+    "bytes": 2760851,
+    "sha256": "dbca4113ef0b8c4db671e7073e9422166556798004145732129452a9decd0dfe",
     "url": "https://github.com/outcometick/polymarket-smart-money-data-samples/releases/latest/download/polymarket-smart-money-data-samples.tar.gz"
   },
   "files": [
     {
       "path": "2026-10-08/sample-2026-10-08.csv.zst",
       "name": "sample-2026-10-08.csv.zst",
-      "rows": 32444,
-      "traders": 76,
-      "wallets": 134,
+      "rows": 18755,
+      "traders": 42,
+      "wallets": 75,
       "ranks": {
         "from": 901,
         "to": 1000
       },
-      "bytes": 2286802,
-      "sha256": "5dcb0d278be01c793f8adc4338c1fdaedc86d84d0f51b4cdfc841e64e38ab3cb"
+      "dropped": 58,
+      "bytes": 1366395,
+      "sha256": "82d5c65031de16d4c9a109abf32388fbb29e6f06d30fbad02d2abe3fb94a70c4"
     },
     {
       "path": "2026-10-08/sample-2026-10-08.json",
       "name": "sample-2026-10-08.json",
-      "note": "the sample's own manifest: the list it was built from, its traders and their wallets",
-      "bytes": 17459,
-      "sha256": "1034b16de831d30548c11893513f6cae7bd4304aea35ffc596771a09b7079c3f"
+      "note": "that day's manifest: the list it was built from, its traders and their wallets",
+      "bytes": 10125,
+      "sha256": "a4689466ce05b9835c2ad1e76813b745b67cd85ba2159006355f6427615f26e9"
+    },
+    {
+      "path": "2026-10-09/sample-2026-10-09.csv.zst",
+      "name": "sample-2026-10-09.csv.zst",
+      "rows": 5357,
+      "traders": 35,
+      "wallets": 60,
+      "ranks": {
+        "from": 901,
+        "to": 1000
+      },
+      "dropped": 65,
+      "bytes": 420912,
+      "sha256": "3cd9c586af54479ca7404bca29320273aedc3652c60505fad1a3cf3e0f869bbc"
+    },
+    {
+      "path": "2026-10-09/sample-2026-10-09.json",
+      "name": "sample-2026-10-09.json",
+      "note": "that day's manifest: the list it was built from, its traders and their wallets",
+      "bytes": 8459,
+      "sha256": "36523db7df66935bdcc8c48dcd0cb42eb930c20deb808c137e9bb691d8014d8d"
+    },
+    {
+      "path": "2026-10-10/sample-2026-10-10.csv.zst",
+      "name": "sample-2026-10-10.csv.zst",
+      "rows": 13276,
+      "traders": 27,
+      "wallets": 48,
+      "ranks": {
+        "from": 901,
+        "to": 1000
+      },
+      "dropped": 73,
+      "bytes": 962789,
+      "sha256": "99ced2e2579b0497885236ed723e171d470d679789290cbe1616f3ba1aecf181"
+    },
+    {
+      "path": "2026-10-10/sample-2026-10-10.json",
+      "name": "sample-2026-10-10.json",
+      "note": "that day's manifest: the list it was built from, its traders and their wallets",
+      "bytes": 6836,
+      "sha256": "f8fd0d47537ee42f1775f117674625ed8057013494b5d777f5b510c49bece6e7"
     }
   ]
 }
